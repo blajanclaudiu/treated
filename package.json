@@ -1,0 +1,47 @@
+{
+  "name": "algebrite",
+  "//": "also change the version in the Algebrite variable at the top of defs file",
+  "version": "1.3.1",
+  "description": "Computer Algebra System in TypeScript",
+  "main": "dist/algebrite.js",
+  "module": "dist/index.js",
+  "browser": "dist/algebrite.bundle-for-browser-min.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "bazel build //...",
+    "test": "bazel test //..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidedc/Algebrite.git"
+  },
+  "keywords": [
+    "cas",
+    "algebra",
+    "computer",
+    "algebra",
+    "system",
+    "eigenmath",
+    "math",
+    "symbolic"
+  ],
+  "author": "Davide Della Casa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidedc/Algebrite/issues"
+  },
+  "homepage": "https://github.com/davidedc/Algebrite#readme",
+  "dependencies": {
+    "@types/node": "^14.0.14",
+    "big-integer": "^1.6.32"
+  },
+  "devDependencies": {
+    "@bazel/bazelisk": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/esbuild": "^4.4.6",
+    "@bazel/typescript": "4.4.6",
+    "typescript": "^3.9.6"
+  }
+}
